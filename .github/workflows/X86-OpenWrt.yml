@@ -133,7 +133,7 @@ jobs:
       with:
         repo_token: ${{ secrets.workflow_token }}
         file: ./artifact/*.zip
-        tag: OpenWRT-21.02
+        tag: X86_$(date +%Y-%m-%d)
         file_glob: true
         overwrite: true
-        release_name: X86-OpenWRT-21.02
+        release_name: $(date +%Y-%m-%d)-openwrt-21.02更新
