@@ -149,7 +149,7 @@ jobs:
       with:
         repo_token: ${{ secrets.workflow_token }}
         file: ./artifact/*.zip
-        tag: OpenWRT-21.02
+        tag: R4S_$(date +%Y-%m-%d)
         file_glob: true
         overwrite: true
-        release_name: R4S-OpenWRT-21.02
+        release_name: $(date +%Y-%m-%d)-openwrt-21.02更新
