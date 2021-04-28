@@ -128,6 +128,7 @@ jobs:
         rm -rf ./artifact/
         mkdir -p ./artifact/
         mv openwrt/bin/targets/rockchip/armv8/*sysupgrade.img* ./artifact/
+        echo "strDate=$(TZ=UTC-8 date +%Y-%m-%d)" >> $GITHUB_ENV
         cd ./artifact/
         ls -Ahl
         gzip -d *.gz && exit 0
