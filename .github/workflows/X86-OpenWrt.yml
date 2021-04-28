@@ -113,6 +113,7 @@ jobs:
         rm -rf ./artifact/
         mkdir -p ./artifact/
         mv openwrt/bin/targets/x86/64/*combined.img* ./artifact/
+        echo "strDate=$(TZ=UTC-8 date +%Y-%m-%d)" >> $GITHUB_ENV
         cd ./artifact/
         ls -Ahl
         gzip -d *.gz && exit 0
