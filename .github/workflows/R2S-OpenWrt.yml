@@ -150,19 +150,7 @@ jobs:
       with:
         repo_token: ${{ secrets.workflow_token }}
         file: ./artifact/*.zip
-        tag: R2S_$(date +%Y-%m-%d)
+        tag: ${{env.strDate}}
         file_glob: true
         overwrite: true
-        release_name: $(date +%Y-%m-%d)-openwrt-21.02更新        
-
-    #- name: Create release
-      #id: create_release
-      #uses: ncipollo/release-action@v1.8.0
-      #with:
-        #name: R2S-OpenWRT-21.02
-        #allowUpdates: true
-        #tag: OpenWRT-21.02
-        #commit: main
-        #replacesArtifacts: true
-        #token: ${{ secrets.workflow_token }}
-        #artifacts: ./artifact/*.zip
+        release_name: ${{env.strDate}}-openwrt-21.02更新        
