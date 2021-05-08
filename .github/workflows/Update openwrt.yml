@@ -38,7 +38,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.workflow_token }}
-        event-type: Update immortalwrt
+        event-type: Update openwrt
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
