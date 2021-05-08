@@ -1,8 +1,8 @@
-name: Update immortalwrt
+name: Update openwrt
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: openwrt-21.02
 
 on:
   workflow_dispatch:
