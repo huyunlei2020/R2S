@@ -43,3 +43,5 @@ define Package/addition-trans-zh/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/tools
 	$(INSTALL_DATA) ./status/status.lua $(1)/usr/lib/lua/luci/tools/status.lua
 endef
+
+$(eval $(call BuildPackage,addition-trans-zh))
