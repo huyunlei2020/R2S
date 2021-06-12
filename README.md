@@ -2,7 +2,7 @@
 
 https://github.com/a0575/Nanopi/releases
 
-基于原生 OpenWrt 21.02 编译，默认管理地址192.168.1.1
+基于原生 OpenWrt 21.02 编译，默认管理地址：192.168.2.1（注意：2021-06-12之前为192.168.1.1）
 
 同时支持 SFE/Software Offload （选则其一开启，默认开启Software Offload）
 
