@@ -12,6 +12,8 @@ sed -i "s/enabled '0'/enabled '1'/g" feeds/packages/utils/irqbalance/files/irqba
 # 移除 SNAPSHOT 标签
 sed -i 's,-SNAPSHOT,,g' include/version.mk
 sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
+#修改默认ip
+sed -i 's/192.168.1.1/192.168.2.1/' package/base-files/files/bin/config_generate
 # 维多利亚的秘密
 rm -rf ./scripts/download.pl
 rm -rf ./include/download.mk
