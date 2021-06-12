@@ -1,7 +1,7 @@
 name: Update Lienol
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt-packages
+  REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: main
 
 on:
